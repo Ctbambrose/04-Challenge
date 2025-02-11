@@ -12,18 +12,32 @@
     <script defer src="./assets/js/logic.js" type="text/javascript"></script>
     <script defer src="./assets/js/form.js" type="text/javascript"></script>
   </head>
-<body>
+<body class="container light">
+  <header>
+    <!--The sun is &#127774 and the moon is &#127769-->
+    <a id="toggle">&#127769</a>
+  </header>
+  <main>
+    <aside>
+        <h2>My First Blog</h2>
+    </aside>
+    <section>
   <!-- TODO: Create landing page elements to match the mock-up provided. At the very least, include the following elements. -->
-
+      <h2>What's on your mind?</h2>
   <!-- A form element that contains the following: -->
-
+      <form>
     <!-- An input element whose label and id are `username` -->
-
+        <input type="text" id="username" name="username" placeholder="Username" required>
     <!-- An input element whose label and id are `title` -->
-
+        <input type="text" id="title" name="blog title" placeholder="Title" required>
     <!-- A textarea element whose label and id are `content` -->
-
+        <textarea id="content" name="blog content" placeholder="Content" required></textarea>
+        <input id="submit" type="submit" value="Submit">
     <!-- A p element whose id is `error` -->
-
+        <p id="error">Please complete the form.</p>
+        
+        </form>
+      </section>
+  </main>
 </body>
 </html>
